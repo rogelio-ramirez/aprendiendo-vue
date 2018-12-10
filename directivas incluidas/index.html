@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+</head>
+
+<body>
+    <main>
+        <!-- v-show sólo hace display none -->
+        <h1 v-show="conectado">Estoy conectado</h1>
+        <!-- v-if lo quita del DOM -->
+        <h1 v-if="conectado">Estoy conectado</h1>
+
+        <!-- v-if para hacer una primera verificación -->
+        <h2 v-if="edad < 18">No puedes entrar</h2>
+        <!-- else-if encadenado al if anterior -->
+        <h2 v-else-if="edad  > 200">Eres inmortal</h2>
+        <!-- else para resto de los casos de los if y else-if anteriores -->
+        <h2 v-else>Puedes entrar</h2>
+
+        <!-- un ejemplo de contenedor es template, utilizado para renderizar, o no, toda una sección -->
+        <template v-if="conectado">
+            <h3>Bienvenido Rogelio</h3>
+            <ul>
+                <li>
+                    <a href="#">Mis Datos</a>
+                    <a href="#">Mensajes</a>
+                    <a href="#">Salir</a>
+                </li>
+            </ul>
+        </template>
+        <!-- else como complemento al contenedor anterior cuando no se renderiza -->
+        <h4 v-else>No estás conectado</h4>
+
+        <pre>{{ $data }}</pre>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

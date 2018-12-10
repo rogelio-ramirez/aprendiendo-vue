@@ -6,4 +6,8 @@ Todos los créditos y agradecimientos para él.
 
 ## Avances
 
-1. Instalación y data binding.
+1. Instalación y data binding - Completo
+1. Directivas incluídas - Completo
+1. Renderizado de listas - En progreso
+
+
