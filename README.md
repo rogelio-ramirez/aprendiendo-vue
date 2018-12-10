@@ -8,6 +8,7 @@ Todos los créditos y agradecimientos para él.
 
 1. Instalación y data binding - Completo
 1. Directivas incluídas - Completo
-1. Renderizado de listas - En progreso
+1. Renderizado de listas - Completo
+
 
 
