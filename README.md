@@ -10,4 +10,5 @@ Todos los créditos y agradecimientos para él.
 1. Directivas incluídas - Completo
 1. Renderizado de listas - Completo
 1. Eventos - Completo
-1. Propiedades computadas - En progreso
+1. Propiedades computadas - Completo
+1. Filtros - En progreso
