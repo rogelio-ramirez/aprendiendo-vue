@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+</head>
+
+<body>
+    <main>
+        <input type="text" v-model="mensaje">
+        <h1>{{mensajeAlreves}}</h1>
+
+        <h2>Tareas con prioridad con v-show:</h2>
+        <ul>
+            <li v-show="tarea.prioridad" v-for="tarea in tareas">{{tarea.titulo}}</li>
+        </ul>
+        <h2>Tareas sin prioridad con v-show:</h2>
+        <ul>
+            <li v-show="!tarea.prioridad" v-for="tarea in tareas">{{tarea.titulo}}</li>
+        </ul>
+        <hr>
+        <h2>Tareas con prioridad con propiedades computadas:</h2>
+        <ul>
+            <li v-for="tarea in tareasConPrioridad">{{tarea.titulo}}</li>
+        </ul>
+        <h2>Tareas sin prioridad con propiedades computadas:</h2>
+        <ul>
+            <li v-for="tarea in tareasSinPrioridad">{{tarea.titulo}}</li>
+        </ul>
+        <h2>Tareas por prioridad con propiedades computadas:</h2>
+        <ul>
+            <li v-for="tarea in tareasPorAntiguedad">{{tarea.titulo}}</li>
+        </ul>
+
+        <pre>{{$data}}</pre>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
